@@ -128,7 +128,7 @@ public abstract class Player {
             return new MoveTransition(this.board, move, MoveStatus.LEAVES_PLAYER_IN_CHECK);
         }
         
-        return null;
+        return new MoveTransition(this.board, move, MoveStatus.DONE);
     }
     
     
